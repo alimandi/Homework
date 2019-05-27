@@ -1,0 +1,73 @@
+انتخاب و استخراج یک ستون از جدول 
+SELECT column_name(s)
+FROM table_name
+انتخاب تمام اطلاعات و استخراج آن
+SELECT * FROM table_name
+
+انتخاب ستون اسم ها و نشون ندادن موارد تکراری
+SELECT DISTINCT column_name(s)
+FROM table_name
+
+کسانی که ای دی آن ها 1111 باشد را نشان میدهد
+Select Name , Family
+From Person
+Where IdNumber= "1111"
+
+وقتی 2 تا شرط درست باشد خروجی نشان داده میشود
+SELECT * FROM Persons
+ WHERE FirstName= "ali"
+ AND LastName= "mandi"
+
+وقتی یک شرط هم درست باشد درستور ما خروجی دارد
+SELECT * FROM Persons
+WHERE FirstName= "ali"
+OR FirstName= "mandi"
+
+ترکیب عملگر And , Or
+Select * From Persons
+Where ((Grade = 16 AND Major = "Hard Ware" ) OR ( Garde = 12 AND Major = "SoftWare"))
+
+دستور Order By
+SELECT column_name(s)
+FROM table_name
+ORDER BY column_name(s) [ASC|DESC]
+
+Goroup By دستور
+SELECT column_name, aggregate_function(column_name)
+FROM table_name
+WHERE column_name operator value
+GROUP BY column_name
+
+Having ساختار دستور 
+SELECT column_name, aggregate_function(column_name)
+FROM table_name
+WHERE column_name operator value
+GROUP BY column_name
+HAVING aggregate_function(column_name) operator value
+
+Insert دستور
+INSERT INTO table_name
+VALUES (value1, value2, value3,...)
+
+Insert روش دوم
+INSERT INTO table_name (column1, column2, column3,...)
+VALUES (value1, value2, value3,...)
+
+Update دستور
+UPDATE table_name
+SET column1=value, column2=value2,...
+WHERE some_column=some_value
+
+آپدیت کردن چند دستور
+Update  Person
+Set Name =""parinaz", Family ="asadi", id-number="11"
+Where  ID =3222
+
+Delete دستور
+DELETE FROM table_name
+WHERE some_column=some_value
+
+حذف یک رکورد مشخص
+Delete From Person
+Where ID = "16"
+
